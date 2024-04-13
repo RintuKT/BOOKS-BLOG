@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% block content %}
+     {% for post in posts %}
+        <article class="media content-section">
+            <img style="width:100px;height:220px;" class="card-img-top" src="{{post.image.url}}" alt="Card image cap">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-3" href="#">{{ post.content }}</a>
+              <small class="text-muted">{{ post.author }}</small>
+                <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.book_name }}</a></h2>
+            <p class="article-content">Published first edition on{{ post.year }}</p>
+              <p class="article-content"> ${{ post.price }}</p>
+               <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
