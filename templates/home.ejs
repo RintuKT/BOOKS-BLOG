@@ -1,0 +1,15 @@
+<% posts.forEach(post => { %>
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#"><%= post.author %></a>
+                <small class="text-muted"><%= post.date_posted.toLocaleDateString() %></small>
+            </div>
+            <h2><a class="article-title" href="#"><%= post.title %></a></h2>
+            <p class="article-content"><%= post.content %></p>
+            <% if (post.images) { %>
+                <img src="<%= post.images %>" alt="<%= post.title %>" class="img-fluid mb-3" style="max-height: 300px;">
+            <% } %>
+        </div>
+    </article>
+<% }); %>
