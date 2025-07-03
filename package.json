@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Django Book Blog Application",
   "scripts": {
-    "install": "python -m pip install -r requirements.txt",
-    "dev": "python FEED/feed/manage.py runserver 0.0.0.0:8000",
-    "migrate": "python FEED/feed/manage.py migrate",
-    "collectstatic": "python FEED/feed/manage.py collectstatic --noinput",
-    "createsuperuser": "python FEED/feed/manage.py createsuperuser"
+    "install": "python3 -m pip install -r requirements.txt",
+    "dev": "python3 FEED/feed/manage.py runserver 0.0.0.0:8000",
+    "migrate": "python3 FEED/feed/manage.py migrate",
+    "collectstatic": "python3 FEED/feed/manage.py collectstatic --noinput",
+    "createsuperuser": "python3 FEED/feed/manage.py createsuperuser"
   },
   "dependencies": {}
 }
