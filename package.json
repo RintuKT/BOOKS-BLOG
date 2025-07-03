@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Django Book Blog Application",
   "scripts": {
-    "dev": "cd FEED/feed && python manage.py runserver",
-    "migrate": "cd FEED/feed && python manage.py migrate",
-    "collectstatic": "cd FEED/feed && python manage.py collectstatic --noinput",
-    "createsuperuser": "cd FEED/feed && python manage.py createsuperuser"
+    "dev": "python FEED/feed/manage.py runserver 0.0.0.0:8000",
+    "migrate": "python FEED/feed/manage.py migrate",
+    "collectstatic": "python FEED/feed/manage.py collectstatic --noinput",
+    "createsuperuser": "python FEED/feed/manage.py createsuperuser"
   },
   "dependencies": {}
 }
