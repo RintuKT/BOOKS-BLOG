@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Django Book Blog Application",
   "scripts": {
-    "install": "python3 -m pip install -r requirements.txt",
+    "install": "python3 -m ensurepip --upgrade && python3 -m pip install -r requirements.txt",
     "dev": "python3 FEED/feed/manage.py runserver 0.0.0.0:8000",
     "migrate": "python3 FEED/feed/manage.py migrate",
     "collectstatic": "python3 FEED/feed/manage.py collectstatic --noinput",
